@@ -1,0 +1,24 @@
+﻿<Window x:Class="Graph.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Graph"
+        mc:Ignorable="d"
+        Title="Gráf" Height="450" Width="750" MaxWidth="750" MinWidth="700">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition ></RowDefinition>
+        </Grid.RowDefinitions>
+        <Button Content="Beolvas" HorizontalAlignment="Left" VerticalAlignment="Center" Click="beolvas" Height="20" Margin="315,0,0,0"/>
+        <ComboBox HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" Width="120" x:Name="list" SelectionChanged="changed"/>
+        <Canvas Grid.Row="2" x:Name="rajzol"></Canvas>
+        <Button Content="Gráf" HorizontalAlignment="Left" Margin="395,0,0,0" VerticalAlignment="Center" Click="grafElohoz"/>
+        <Label Content="Pont szomszédjai" HorizontalAlignment="Left" Margin="195,0,0,0" Grid.Row="1" VerticalAlignment="Center"/>
+
+
+
+    </Grid>
+</Window>
